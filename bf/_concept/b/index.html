@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Il viaggio dell'ordine · Concept B | eLogy</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#151716">
+<link rel="icon" href="/elogy-bf26-concept/bf/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/elogy-bf26-concept/bf/assets/kf-10-wide.webp">
+<link rel="stylesheet" href="b.css?v=3">
+<script>
+/* motion solo se JS c'è e l'utente non chiede movimento ridotto: altrimenti la pagina resta statica e completa */
+(function(){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!r&&!/[?&]static/.test(location.search))document.documentElement.classList.add('m');})();
+</script>
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="https://elogy.io" aria-label="eLogy"><img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="107" height="39"></a>
+  <a class="top-cta" href="#fine" data-cta="header">Prepara il tuo Black Friday</a>
+</header>
+
+<!-- ============ 1 · HERO (quella esistente) ============ -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/elogy-bf26-concept/bf/assets/kf-10-wide.webp" aria-hidden="true">
+    <source src="/elogy-bf26-concept/bf/assets/loop-b.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade"></div>
+  <div class="hero-in">
+    <p class="kicker"><span class="dot"></span>Black Friday 2026</p>
+    <h1>Il tuo e-commerce può vendere quanto vuole.<br>La logistica deve riuscire a seguirlo.</h1>
+    <p class="sub">Il Black Friday può portare più ordini in poche ore. Prepararli, imballarli e spedirli non deve diventare il limite della tua crescita.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#fine" data-cta="hero">Prepara il tuo Black Friday</a>
+      <a class="btn-ghost" href="/elogy-bf26-concept/bf/assets/spot.mp4" data-open-spot>Guarda cosa succede il 27 novembre <span aria-hidden="true">▶</span></a>
+    </div>
+    <ul class="hero-facts">
+      <li><b>5-7</b> giorni lavorativi per partire</li>
+      <li><b>Shopify</b> e <b>WooCommerce</b> collegati</li>
+      <li><b>Nessun</b> vincolo di durata rigido</li>
+    </ul>
+  </div>
+  <!-- 2 · la prima transizione: l'ordine nasce qui, sopra il video -->
+  <div class="toast slot" id="slot-hero" aria-hidden="true">
+    <div class="tkt"><div class="tkt-h"><i class="sq"></i>Nuovo ordine<em>esempio</em></div><b>Ordine #0001</b><small>1 × Prodotto d'esempio</small><span class="pill">Appena ricevuto</span></div>
+  </div>
+  <a class="scroll-hint" href="#problema" aria-label="Segui l'ordine"><span>Segui l'ordine</span><i></i></a>
+</section>
+
+<!-- ============ 3 · PROBLEMA: l'ordine resta bloccato nel collo di bottiglia ============ -->
+<section class="problem" id="problema">
+  <div class="pb-grid">
+    <div class="pb-visual">
+      <svg class="neck" viewBox="0 0 600 700" role="img" aria-label="Tanti ordini che si accumulano sopra un passaggio stretto: il collo di bottiglia">
+        <path class="nk-wall" d="M40 40 L230 520 L230 640 M560 40 L370 520 L370 640"/>
+        <path class="nk-floor" d="M20 660 H580"/>
+        <g class="nk-labels">
+          <text x="120" y="585" text-anchor="end">persone</text>
+          <text x="120" y="615" text-anchor="end">postazioni</text>
+          <text x="480" y="585">spazio</text>
+          <text x="480" y="615">ritiri</text>
+        </g>
+        <g class="pile-fixed"><g class="pt" transform="translate(300 492) rotate(-2.8)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(262 452) rotate(-5.6)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(338 452) rotate(2.4)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(186 252) rotate(-6.8)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(262 252) rotate(0.6)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(338 252) rotate(-2.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(414 252) rotate(-7.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(186 212) rotate(0.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(262 212) rotate(-7.4)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(338 212) rotate(-1.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(414 212) rotate(-6.9)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(148 172) rotate(-6.5)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(224 172) rotate(-1.2)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(300 172) rotate(5.2)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(376 172) rotate(-6.0)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(452 172) rotate(-4.4)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(148 132) rotate(2.0)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(224 132) rotate(7.2)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(300 132) rotate(1.2)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(376 132) rotate(-1.7)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(452 132) rotate(7.6)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(110 92) rotate(-7.3)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(186 92) rotate(5.7)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(262 92) rotate(-3.4)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(338 92) rotate(-5.7)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(414 92) rotate(-6.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(490 92) rotate(-3.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(110 52) rotate(5.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(186 52) rotate(-5.1)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(262 52) rotate(1.3)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(338 52) rotate(2.2)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(414 52) rotate(-2.0)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g><g class="pt" transform="translate(490 52) rotate(0.8)"><rect x="-34" y="-19" width="68" height="38" rx="6"/><path d="M-22 -4 H12 M-22 8 H0"/></g></g>
+        <g id="pile"></g>
+        <g class="nk-pass"><rect id="nk-one" x="265" y="560" width="70" height="40" rx="6"/></g>
+        <rect class="slot" id="slot-pile" x="200" y="286" width="200" height="107" rx="12"/>
+        <g class="pile-static tkt-svg" transform="translate(200 286)">
+          <rect width="200" height="107" rx="12"/>
+          <text x="16" y="42" class="t1">Ordine #0001</text>
+          <text x="16" y="82" class="t2">in attesa · esempio</text>
+        </g>
+      </svg>
+      <p class="pb-cap" aria-hidden="true"><span>Ordini venduti</span><span>Ordini spediti</span></p>
+    </div>
+    <div class="pb-text">
+      <p class="eyebrow">Il problema</p>
+      <h2>Quando le vendite accelerano, la logistica non può frenarti.</h2>
+      <p class="beat">Puoi aumentare il budget delle campagne in pochi minuti.</p>
+      <p class="beat">Non puoi aggiungere persone, postazioni, spazio e ritiri dei corrieri con la stessa velocità.</p>
+      <p class="beat">E quando gli ordini aumentano tutti insieme, il problema non è più venderne un altro.</p>
+      <p class="beat big">È riuscire a spedire quelli che hai già venduto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 · CON ELOGY: l'ordine viene estratto dalla coda ============ -->
+<section class="shift" id="con-elogy">
+  <div class="sh-in">
+    <p class="eyebrow">Con eLogy</p>
+    <h2>Tu pensa a vendere.<br>Dal clic in poi, ci pensa eLogy.</h2>
+    <div class="sh-grid">
+      <div class="sh-slot">
+        <div class="slot" id="slot-shift" aria-hidden="true">
+          <div class="tkt on"><div class="tkt-h"><i class="sq"></i>Nuovo ordine<em>esempio</em></div><b>Ordine #0001</b><small>1 × Prodotto d'esempio</small><span class="pill">Preso in carico</span></div>
+        </div>
+        <span class="click" aria-hidden="true"></span>
+      </div>
+      <div class="sh-lead">
+        <p>L'ordine arriva direttamente dal tuo Shopify, WooCommerce o tramite API.</p>
+        <p>Noi lo preleviamo, lo prepariamo, lo imballiamo e lo affidiamo al corriere.</p>
+        <p>Tu continui a far crescere il tuo e-commerce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 · IL PROCESSO: il viaggio dell'ordine ============
+     Senza JS o con movimento ridotto: nove quadri statici in colonna (la storia resta leggibile).
+     Con JS: i quadri diventano un unico mondo che scorre e l'ordine lo attraversa. -->
+<section class="journey" id="viaggio" aria-label="Il viaggio di un ordine, dal negozio al cliente">
+  <div class="j-head">
+    <p class="eyebrow">Il viaggio di un ordine</p>
+    <p class="j-sub">Segui l'ordine #0001 <span>(un ordine d'esempio)</span> dal clic del tuo cliente fino alla sua porta.</p>
+  </div>
+  <div class="j-list">
+
+  <!-- 0 · SHOPIFY / WOOCOMMERCE -->
+  <article class="st" data-i="0" data-name="Shopify / WooCommerce">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <rect class="s-panel" x="20" y="200" width="300" height="250" rx="16"/>
+        <circle class="s-dot" cx="46" cy="224" r="6"/><circle class="s-dot" cx="66" cy="224" r="6"/><circle class="s-dot" cx="86" cy="224" r="6"/>
+        <rect class="s-mute" x="40" y="250" width="120" height="96" rx="8"/>
+        <rect class="s-mute" x="176" y="250" width="124" height="96" rx="8"/>
+        <rect class="s-mute" x="40" y="362" width="150" height="12" rx="6"/>
+        <rect class="s-mute" x="40" y="384" width="100" height="12" rx="6"/>
+        <rect class="s-btn" id="checkout" x="196" y="394" width="108" height="40" rx="20"/>
+        <text class="s-btxt" x="250" y="420" text-anchor="middle">Acquista</text>
+        <path class="s-flow" d="M304 414 C 318 414, 316 420, 325 420"/>
+        <g class="s-chips">
+          <rect x="20" y="486" width="116" height="44" rx="22"/><text x="78" y="515" text-anchor="middle">Shopify</text>
+          <rect x="146" y="486" width="170" height="44" rx="22"/><text x="231" y="515" text-anchor="middle">WooCommerce</text>
+          <rect x="20" y="540" width="80" height="44" rx="22"/><text x="60" y="569" text-anchor="middle">API</text>
+        </g>
+      </g>
+      <g class="form f0" transform="translate(500 420)">
+        <rect class="f-code" x="-175" y="-110" width="350" height="220" rx="18"/>
+        <text class="f-tag" x="157" y="-80" text-anchor="end">ESEMPIO</text>
+        <text class="f-mono" x="-150" y="-58">{</text>
+        <text class="f-mono" x="-130" y="-22"><tspan class="k">"ordine"</tspan>: <tspan class="v">"#0001"</tspan>,</text>
+        <text class="f-mono" x="-130" y="12"><tspan class="k">"articolo"</tspan>: <tspan class="v">"esempio"</tspan>,</text>
+        <text class="f-mono" x="-130" y="46"><tspan class="k">"da"</tspan>: <tspan class="v">"store"</tspan></text>
+        <text class="f-mono" x="-150" y="80">}</text>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>01</span>Shopify / WooCommerce</p>
+      <h3>Vendi</h3>
+      <p>Shopify, WooCommerce o API</p>
+      <p class="st-note"><b>IL TUO STORE</b> Shopify e WooCommerce collegati direttamente. API per le altre piattaforme.</p>
+    </div>
+  </article>
+
+  <!-- 1 · ORDINE RICEVUTO -->
+  <article class="st" data-i="1" data-name="Ordine ricevuto">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <circle class="s-ring r1" cx="500" cy="420" r="190"/>
+        <circle class="s-ring r2" cx="500" cy="420" r="250"/>
+        <rect class="s-panel" x="720" y="200" width="250" height="300" rx="16"/>
+        <text class="s-h" x="746" y="244">Ordini</text>
+        <rect class="s-new" x="740" y="264" width="210" height="46" rx="8"/>
+        <text class="s-newt" x="756" y="294">#0001 · nuovo</text>
+        <rect class="s-mute" x="740" y="322" width="210" height="46" rx="8"/>
+        <rect class="s-mute" x="740" y="380" width="210" height="46" rx="8"/>
+        <rect class="s-mute" x="740" y="438" width="210" height="46" rx="8"/>
+        <path class="s-flow" d="M660 420 C 690 420, 700 287, 740 287"/>
+      </g>
+      <g class="form f1" transform="translate(500 420)">
+        <rect class="f-card" x="-160" y="-100" width="320" height="200" rx="18"/>
+        <rect class="f-cardh" x="-160" y="-100" width="320" height="54" rx="18"/><rect class="f-cardh" x="-160" y="-66" width="320" height="20"/>
+        <text class="f-h" x="-136" y="-64">Nuovo ordine</text>
+        <text class="f-tag2" x="138" y="-64" text-anchor="end">ESEMPIO</text>
+        <text class="f-t1" x="-136" y="-4">Ordine #0001</text>
+        <text class="f-t2" x="-136" y="30">1 × Prodotto d'esempio</text>
+        <rect class="f-pill" x="-136" y="48" width="150" height="34" rx="17"/>
+        <text class="f-pillt" x="-61" y="71" text-anchor="middle">Ricevuto ✓</text>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>02</span>Ordine ricevuto</p>
+      <h3>L'ordine arriva a eLogy</h3>
+      <p>automaticamente</p>
+    </div>
+  </article>
+
+  <!-- 2 · ELOGY -->
+  <article class="st" data-i="2" data-name="eLogy">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <path class="s-roof" d="M230 270 L500 140 L770 270 Z"/>
+        <rect class="s-wall" x="250" y="270" width="500" height="350"/>
+        <rect class="s-gate" x="330" y="300" width="340" height="320" rx="6"/>
+        <path class="s-gatel" d="M330 340 H670 M330 380 H670"/>
+        <image href="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" x="430" y="198" width="140" height="51"/>
+        <g class="s-pins">
+          <circle cx="120" cy="330" r="9"/><text x="140" y="338">Pomezia</text>
+          <circle cx="120" cy="390" r="7"/><text x="140" y="397">Pécs</text>
+          <circle cx="120" cy="450" r="7"/><text x="140" y="457">Mataró</text>
+        </g>
+      </g>
+      <g class="form f2" transform="translate(500 420)">
+        <rect class="f-glow" x="-176" y="-116" width="352" height="232" rx="24"/>
+        <rect class="f-card" x="-160" y="-100" width="320" height="200" rx="18"/>
+        <rect class="f-cardh" x="-160" y="-100" width="320" height="54" rx="18"/><rect class="f-cardh" x="-160" y="-66" width="320" height="20"/>
+        <text class="f-h" x="-136" y="-64">Nuovo ordine</text>
+        <text class="f-tag2" x="138" y="-64" text-anchor="end">ESEMPIO</text>
+        <text class="f-t1" x="-136" y="-4">Ordine #0001</text>
+        <text class="f-t2" x="-136" y="30">1 × Prodotto d'esempio</text>
+        <rect class="f-pill on" x="-136" y="48" width="190" height="34" rx="17"/>
+        <text class="f-pillt on" x="-41" y="71" text-anchor="middle">Preso in carico</text>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>02</span>eLogy</p>
+      <h3>Pomezia</h3>
+      <p>Il tuo hub logistico in Italia, vicino a Roma.</p>
+      <p class="st-note"><b>EUROPA</b> Magazzini anche in Ungheria e Spagna per accompagnare la crescita fuori dall'Italia.</p>
+    </div>
+  </article>
+
+  <!-- 3 · PICKING -->
+  <article class="st" data-i="3" data-name="Picking">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <path class="s-rack" d="M40 180 V620 M340 180 V620 M40 330 H340 M40 480 H340 M660 180 V620 M960 180 V620 M660 330 H960 M660 480 H960"/>
+        <g class="s-bins">
+          <rect x="56" y="262" width="80" height="62" rx="4"/><rect x="150" y="262" width="80" height="62" rx="4"/><rect x="244" y="262" width="80" height="62" rx="4"/>
+          <rect x="56" y="412" width="80" height="62" rx="4"/><rect x="150" y="412" width="80" height="62" rx="4"/><rect x="244" y="412" width="80" height="62" rx="4"/>
+          <rect x="56" y="560" width="80" height="54" rx="4"/><rect x="244" y="560" width="80" height="54" rx="4"/>
+          <rect x="770" y="262" width="80" height="62" rx="4"/><rect x="864" y="262" width="80" height="62" rx="4"/>
+          <rect x="770" y="412" width="80" height="62" rx="4"/><rect x="864" y="412" width="80" height="62" rx="4"/>
+          <rect x="676" y="560" width="80" height="54" rx="4"/><rect x="864" y="560" width="80" height="54" rx="4"/>
+        </g>
+        <rect class="s-hot" x="676" y="412" width="80" height="62" rx="4"/>
+        <path class="s-laser" d="M676 443 L590 420"/>
+      </g>
+      <g class="form f3" transform="translate(500 420)">
+        <rect class="f-cap" x="-32" y="-150" width="64" height="40" rx="8"/>
+        <rect class="f-bottle" x="-60" y="-118" width="120" height="228" rx="34"/>
+        <rect class="f-lbl" x="-60" y="-34" width="120" height="74"/>
+        <text class="f-lblt" x="0" y="10" text-anchor="middle">ESEMPIO</text>
+        <path class="f-string" d="M52 -86 C 90 -86, 100 -60, 104 -30"/>
+        <g transform="translate(62 -34) rotate(8)"><rect class="f-picktag" width="96" height="52" rx="8"/><text class="f-pickt" x="48" y="33" text-anchor="middle">#0001</text></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>03</span>Picking</p>
+      <h3>Prepariamo il pacco</h3>
+      <p class="triad"><mark>prelievo</mark>, imballo, etichetta</p>
+      <p class="st-line"><mark>Noi lo preleviamo,</mark> lo prepariamo, lo imballiamo e lo affidiamo al corriere.</p>
+    </div>
+  </article>
+
+  <!-- 4 · PACKING -->
+  <article class="st" data-i="4" data-name="Packing">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <path class="s-table" d="M150 560 L500 440 L850 560 L500 690 Z"/>
+        <g class="s-flat"><path d="M40 330 L200 280 L300 320 L140 370 Z"/><path d="M40 300 L200 250 L300 290 L140 340 Z"/></g>
+        <g class="s-tape"><circle cx="840" cy="330" r="46"/><circle class="in" cx="840" cy="330" r="20"/><path d="M886 330 L930 370 L870 390"/></g>
+      </g>
+      <g class="form f4" transform="translate(500 420)">
+        <path class="bx-in" d="M0 -120 L150 -45 L0 30 L-150 -45 Z"/>
+        <g class="pk-item"><rect class="f-cap" x="-18" y="-196" width="36" height="24" rx="5"/><rect class="f-bottle" x="-34" y="-178" width="68" height="130" rx="20"/><rect class="f-lbl" x="-34" y="-130" width="68" height="40"/></g>
+        <path class="bx-l" d="M-150 -45 L0 30 L0 170 L-150 95 Z"/>
+        <path class="bx-r" d="M0 30 L150 -45 L150 95 L0 170 Z"/>
+        <g class="pk-flaps"><path class="bx-fl" d="M-150 -45 L0 -120 L-40 -200 L-190 -125 Z"/><path class="bx-fr" d="M0 -120 L150 -45 L190 -125 L40 -200 Z"/></g>
+        <g class="pk-closed"><path class="bx-t" d="M0 -120 L150 -45 L0 30 L-150 -45 Z"/><path class="bx-tape" d="M-75 -82 L75 -8"/></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>03</span>Packing</p>
+      <h3>Prepariamo il pacco</h3>
+      <p class="triad">prelievo, <mark>imballo</mark>, etichetta</p>
+      <p class="st-line">Noi lo preleviamo, <mark>lo prepariamo, lo imballiamo</mark> e lo affidiamo al corriere.</p>
+      <p class="st-note"><b>IMBALLAGGI</b> Vuoi mantenere il tuo packaging? Mandacelo e lo utilizziamo secondo le tue indicazioni.</p>
+    </div>
+  </article>
+
+  <!-- 5 · ETICHETTA -->
+  <article class="st" data-i="5" data-name="Etichetta">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <rect class="s-printer" x="720" y="330" width="220" height="150" rx="18"/>
+        <rect class="s-slotp" x="740" y="370" width="10" height="70" rx="3"/>
+        <circle class="s-led" cx="910" cy="360" r="7"/>
+        <path class="s-table" d="M150 560 L500 440 L850 560 L500 690 Z"/>
+      </g>
+      <g class="form f5" transform="translate(500 420)">
+        <path class="bx-l" d="M-150 -45 L0 30 L0 170 L-150 95 Z"/>
+        <path class="bx-r" d="M0 30 L150 -45 L150 95 L0 170 Z"/>
+        <path class="bx-t" d="M0 -120 L150 -45 L0 30 L-150 -45 Z"/><path class="bx-tape" d="M-75 -82 L75 -8"/>
+        <g transform="matrix(1 -0.5 0 1 0 30)"><g class="lb-move">
+          <rect class="lb" x="18" y="18" width="116" height="84" rx="4"/>
+          <path class="lb-bar" d="M30 30 V62 M36 30 V62 M40 30 V62 M48 30 V62 M52 30 V62 M60 30 V62 M66 30 V62 M70 30 V62 M78 30 V62 M84 30 V62 M88 30 V62 M96 30 V62 M100 30 V62 M108 30 V62 M114 30 V62 M120 30 V62"/>
+          <text class="lb-t" x="30" y="90">#0001 · ESEMPIO</text>
+        </g></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>03</span>Etichetta</p>
+      <h3>Prepariamo il pacco</h3>
+      <p class="triad">prelievo, imballo, <mark>etichetta</mark></p>
+    </div>
+  </article>
+
+  <!-- 6 · CORRIERE -->
+  <article class="st" data-i="6" data-name="Corriere">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <rect class="s-dock" x="30" y="230" width="250" height="330" rx="6"/>
+        <path class="s-dockl" d="M30 280 H280 M30 330 H280 M30 380 H280 M30 430 H280"/>
+        <g class="s-parcels"><path d="M60 560 L110 535 L160 560 L110 585 Z"/><path d="M60 560 L110 585 L110 625 L60 600 Z"/><path d="M110 585 L160 560 L160 600 L110 625 Z"/>
+        <path d="M170 575 L210 555 L250 575 L210 595 Z"/><path d="M170 575 L210 595 L210 628 L170 608 Z"/><path d="M210 595 L250 575 L250 608 L210 628 Z"/></g>
+        <path class="s-road" d="M0 640 H1000"/>
+        <path class="s-dash" d="M20 640 H1000"/>
+      </g>
+      <g class="form f6" transform="translate(500 420)">
+        <g class="vn-speed"><path d="M-300 -60 H-230 M-320 0 H-220 M-290 60 H-230"/></g>
+        <rect class="vn-body" x="-200" y="-120" width="300" height="170" rx="14"/>
+        <path class="vn-cab" d="M100 -120 H140 C 160 -120 170 -110 180 -90 L 200 -40 V 50 H 100 Z"/>
+        <path class="vn-win" d="M112 -104 H138 L162 -48 H112 Z"/>
+        <rect class="vn-stripe" x="-200" y="10" width="400" height="10"/>
+        <rect class="vn-hatch" x="-176" y="-96" width="130" height="92" rx="8"/>
+        <g transform="translate(-111 -34) scale(.28)"><path class="bx-t" d="M0 -120 L150 -45 L0 30 L-150 -45 Z"/><path class="bx-l" d="M-150 -45 L0 30 L0 170 L-150 95 Z"/><path class="bx-r" d="M0 30 L150 -45 L150 95 L0 170 Z"/><path class="bx-tape" d="M-75 -82 L75 -8"/></g>
+        <g class="vn-wheel" transform="translate(-120 56)"><circle r="34"/><circle class="hub" r="11"/><path class="spk" d="M0 -24 V24 M-24 0 H24"/></g>
+        <g class="vn-wheel" transform="translate(130 56)"><circle r="34"/><circle class="hub" r="11"/><path class="spk" d="M0 -24 V24 M-24 0 H24"/></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>04</span>Corriere</p>
+      <h3>Parte</h3>
+      <p>con il corriere più adatto</p>
+      <p class="st-line">Noi lo preleviamo, lo prepariamo, lo imballiamo <mark>e lo affidiamo al corriere.</mark></p>
+      <p class="st-note"><b>DECINE DI CORRIERI</b> Integrati nella nostra piattaforma per gestire le spedizioni senza dipendere da un solo operatore.</p>
+    </div>
+  </article>
+
+  <!-- 7 · TRACKING -->
+  <article class="st" data-i="7" data-name="Tracking">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <path class="s-route" d="M30 620 C 200 620, 220 470, 360 470 S 640 300, 760 300 S 930 190, 980 170"/>
+        <circle class="s-node" cx="30" cy="620" r="10"/><circle class="s-node" cx="360" cy="470" r="10"/><circle class="s-node" cx="760" cy="300" r="10"/><circle class="s-node end" cx="980" cy="170" r="12"/>
+      </g>
+      <g class="form f7" transform="translate(500 420)">
+        <rect class="ph" x="-120" y="-210" width="240" height="420" rx="34"/>
+        <rect class="ph-s" x="-104" y="-192" width="208" height="384" rx="22"/>
+        <text class="ph-h" x="-82" y="-146">Ordine #0001</text>
+        <text class="ph-k" x="-82" y="-118">TRACKING · ESEMPIO</text>
+        <path class="ph-line" d="M-68 -66 V 114"/>
+        <path class="ph-fill" d="M-68 -66 V 114"/>
+        <g class="ph-st" data-s="0"><circle cx="-68" cy="-66" r="13"/><text x="-40" y="-57">Spedito</text></g>
+        <g class="ph-st" data-s="1"><circle cx="-68" cy="-6" r="13"/><text x="-40" y="3">In transito</text></g>
+        <g class="ph-st" data-s="2"><circle cx="-68" cy="54" r="13"/><text x="-40" y="63">In consegna</text></g>
+        <g class="ph-st" data-s="3"><circle cx="-68" cy="114" r="13"/><text x="-40" y="123">Consegnato</text></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>05</span>Tracking</p>
+      <h3>Il cliente lo riceve</h3>
+      <p>con il suo tracking</p>
+    </div>
+  </article>
+
+  <!-- 8 · CLIENTE -->
+  <article class="st" data-i="8" data-name="Cliente">
+    <svg viewBox="0 0 1000 800" aria-hidden="true">
+      <g class="scene">
+        <rect class="s-wall2" x="250" y="120" width="500" height="520"/>
+        <rect class="s-door" x="390" y="170" width="220" height="440" rx="6"/>
+        <rect class="s-doorp" x="416" y="200" width="168" height="170" rx="4"/><rect class="s-doorp" x="416" y="392" width="168" height="190" rx="4"/>
+        <circle class="s-knob" cx="584" cy="400" r="9"/>
+        <path class="s-mat" d="M330 640 H670 L640 690 H360 Z"/>
+        <g class="s-plant"><rect x="700" y="560" width="60" height="80" rx="6"/><path d="M730 560 C 700 500 690 470 700 440 M730 560 C 750 500 770 480 790 470 M730 560 C 730 510 728 490 735 450"/></g>
+      </g>
+      <g class="form f8" transform="translate(500 420)">
+        <g transform="translate(0 110) scale(.72)">
+          <path class="bx-l" d="M-150 -45 L0 30 L0 170 L-150 95 Z"/>
+          <path class="bx-r" d="M0 30 L150 -45 L150 95 L0 170 Z"/>
+          <path class="bx-t" d="M0 -120 L150 -45 L0 30 L-150 -45 Z"/><path class="bx-tape" d="M-75 -82 L75 -8"/>
+          <g transform="matrix(1 -0.5 0 1 0 30)"><rect class="lb" x="18" y="18" width="116" height="84" rx="4"/><path class="lb-bar" d="M30 30 V62 M36 30 V62 M40 30 V62 M48 30 V62 M52 30 V62 M60 30 V62 M66 30 V62 M70 30 V62 M78 30 V62 M84 30 V62 M88 30 V62 M96 30 V62 M100 30 V62 M108 30 V62 M114 30 V62 M120 30 V62"/><text class="lb-t" x="30" y="90">#0001 · ESEMPIO</text></g>
+        </g>
+        <g class="ok" transform="translate(150 -150)"><circle r="54"/><path d="M-22 2 L-6 18 L24 -14"/><text y="92" text-anchor="middle">Consegnato</text></g>
+      </g>
+    </svg>
+    <div class="st-copy">
+      <p class="st-k"><span>05</span>Cliente</p>
+      <h3 class="long">Tu continui a far crescere il tuo e-commerce.</h3>
+      <a class="btn" href="#fine" data-cta="viaggio">Prepara il tuo Black Friday</a>
+    </div>
+  </article>
+
+  </div>
+</section>
+
+<!-- chiusura della demo: niente modulo, solo la CTA -->
+<section class="fine" id="fine">
+  <div class="fine-in">
+    <h2>Il 27 novembre devi pensare a vendere.<br>Non a quanti pacchi riesci ancora a preparare.</h2>
+    <p>Raccontaci quanti ordini gestisci e come spedisci oggi. Vediamo insieme se eLogy può preparare la tua logistica per il Black Friday.</p>
+    <a class="btn" href="#fine" data-cta="final">Prepara il tuo Black Friday</a>
+    <p class="demo-note">Demo visiva · concept B «Il viaggio dell'ordine». L'ordine #0001 è un esempio.</p>
+  </div>
+</section>
+
+<!-- l'ordine che viaggia fra le sezioni (solo con movimento attivo) -->
+<div class="ghost" id="ghost" aria-hidden="true">
+  <div class="tkt"><div class="tkt-h"><i class="sq"></i>Nuovo ordine<em>esempio</em></div><b>Ordine #0001</b><small>1 × Prodotto d'esempio</small><span class="pill" id="ghost-pill">Appena ricevuto</span></div>
+</div>
+
+<dialog class="spot" id="spot"><button type="button" class="x" data-close aria-label="Chiudi">×</button><video controls playsinline preload="none" src="/elogy-bf26-concept/bf/assets/spot.mp4"></video></dialog>
+
+<script src="b.js?v=3" defer></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Concept D · Un pacco, una storia | eLogy</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E100F">
+<link rel="icon" href="/elogy-bf26-concept/bf/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="d.css?v=1">
+<script>
+/* motion only with JS and without reduced motion: otherwise the page stays static and complete */
+(function(){var d=document.documentElement;d.classList.add('js');
+if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('m')}})();
+</script>
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="https://elogy.io" aria-label="eLogy"><img class="lg-d" src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="107" height="39"><img class="lg-l" src="/elogy-bf26-concept/bf/assets/elogy-logo-BlackGreen.svg" alt="" width="107" height="39"></a>
+  <a class="top-cta" href="#modulo" data-cta="header">Prepara il tuo Black Friday</a>
+</header>
+
+<main>
+
+<!-- 1 · HERO (esistente) + prima transizione: il video si ritira in una finestra e resta una parola -->
+<section class="hero-wrap" id="hero">
+  <div class="hero-pin">
+    <div class="hero-frame">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/elogy-bf26-concept/bf/assets/kf-10-wide.webp" aria-hidden="true">
+        <source src="/elogy-bf26-concept/bf/assets/loop-b.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+    </div>
+    <div class="hero-in">
+      <p class="kicker"><span class="dot"></span>Black Friday 2026</p>
+      <h1>Il tuo e-commerce può vendere quanto vuole.<br>La logistica deve riuscire a seguirlo.</h1>
+      <p class="sub">Il Black Friday può portare più ordini in poche ore. Prepararli, imballarli e spedirli non deve diventare il limite della tua crescita.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#modulo" data-cta="hero">Prepara il tuo Black Friday</a>
+        <button class="btn-ghost" type="button" data-open-spot>Guarda cosa succede il 27 novembre <span aria-hidden="true">▶</span></button>
+      </div>
+      <ul class="hero-facts">
+        <li><b>5-7</b> giorni lavorativi per partire</li>
+        <li><b>Shopify</b> e <b>WooCommerce</b> collegati</li>
+        <li><b>Nessun</b> vincolo di durata rigido</li>
+      </ul>
+    </div>
+    <p class="word word-vendi" aria-hidden="true">Vendi.</p>
+    <span class="scroll-hint" aria-hidden="true"></span>
+  </div>
+</section>
+
+<!-- 2 · Gli ordini aumentano: un punto per ogni ordine, finché lo schermo si riempie -->
+<section class="orders-wrap" id="ordini">
+  <div class="orders-pin">
+    <canvas class="orders-canvas" aria-hidden="true"></canvas>
+    <h2 class="word">Gli ordini<br>aumentano.</h2>
+  </div>
+</section>
+
+<!-- 3 · Il problema: una frase per schermata -->
+<section class="problem" id="problema">
+  <div class="moment">
+    <p class="eyebrow">Il problema</p>
+    <h2 class="big">Quando le vendite accelerano, la logistica non può frenarti.</h2>
+  </div>
+  <div class="moment duo">
+    <p class="fast">Puoi aumentare il budget delle campagne in pochi minuti.</p>
+    <p class="slow">Non puoi aggiungere persone, postazioni, spazio e ritiri dei corrieri con la stessa velocità.</p>
+  </div>
+  <div class="moment">
+    <p class="mid">E quando gli ordini aumentano tutti insieme, il problema non è più venderne un altro.</p>
+    <p class="big punch">È riuscire a spedire quelli che hai già venduto.</p>
+  </div>
+  <div class="moment">
+    <p class="word word-dark">Il magazzino<br>deve seguirli.</p>
+  </div>
+</section>
+
+<!-- 4 · Con eLogy: la pagina si accende -->
+<section class="reveal" id="con-elogy">
+  <div class="reveal-pin">
+    <div class="reveal-logo"><img src="/elogy-bf26-concept/bf/assets/elogy-logo-BlackGreen.svg" alt="eLogy" width="107" height="39"></div>
+    <div class="reveal-copy">
+      <p class="eyebrow">Con eLogy</p>
+      <h2 class="big">Tu pensa a vendere.<br>Dal clic in poi, ci pensa eLogy.</h2>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Il processo raccontato da un pacco -->
+<section class="scene" id="processo" aria-label="Il percorso di un ordine">
+  <div class="stage">
+
+    <div class="map" aria-hidden="true">
+      <img class="map-img" src="europa.svg" alt="" width="600" height="520" loading="lazy">
+      <span class="pin pin-pomezia"><i></i><b>Pomezia</b><em>Italia</em></span>
+      <span class="pin pin-pecs"><i></i><b>Pécs</b><em>Ungheria</em></span>
+      <span class="pin pin-mataro"><i></i><b>Mataró</b><em>Spagna</em></span>
+    </div>
+
+    <svg class="rays" viewBox="-500 -500 1000 1000" aria-hidden="true"></svg>
+
+    <div class="sources" aria-hidden="true">
+      <span class="src s1">Shopify</span><span class="src s2">WooCommerce</span><span class="src s3">API</span>
+    </div>
+
+    <div class="obj" aria-hidden="true">
+      <div class="shadow"></div>
+      <div class="cam">
+        <div class="box">
+          <!-- interno -->
+          <div class="f in-back"></div><div class="f in-left"></div><div class="f in-right"></div><div class="f in-bottom"></div>
+          <!-- prodotto -->
+          <div class="prod">
+            <div class="p p-front"></div><div class="p p-back"></div><div class="p p-left"></div><div class="p p-right"></div><div class="p p-top"></div>
+          </div>
+          <div class="tissue"></div>
+          <!-- esterno -->
+          <div class="f out-back"></div><div class="f out-left"></div><div class="f out-right"></div><div class="f out-bottom"></div>
+          <div class="f out-front">
+            <div class="tape-v"></div>
+            <div class="label">
+              <img src="/elogy-bf26-concept/bf/assets/elogy-logo-BlackGreen.svg" alt="" width="107" height="39">
+              <span class="l-lines"><i></i><i></i><i></i></span>
+              <span class="l-code"></span>
+              <span class="l-seal"></span>
+            </div>
+          </div>
+          <!-- lembi -->
+          <div class="hinge h-left"><div class="flap"><div class="fo"></div><div class="fi"></div></div></div>
+          <div class="hinge h-right"><div class="flap"><div class="fo"></div><div class="fi"></div></div></div>
+          <div class="hinge h-back"><div class="flap"><div class="fo"></div><div class="fi"></div></div></div>
+          <div class="hinge h-front"><div class="flap"><div class="fo"></div><div class="fi"></div></div></div>
+          <div class="tape-top"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="beats">
+      <div class="beat b0 pos-a" data-r="0,.085">
+        <p class="t-lg">L'ordine arriva direttamente dal tuo Shopify, WooCommerce o tramite API.</p>
+        <p class="step"><span>02</span> L'ordine arriva a eLogy · automaticamente</p>
+      </div>
+      <div class="beat b1 pos-b" data-r=".09,.2">
+        <p class="t-xl">Noi lo preleviamo,</p>
+      </div>
+      <div class="beat b2 pos-a" data-r=".2,.3">
+        <p class="t-xl">lo prepariamo,</p>
+      </div>
+      <div class="beat b3 pos-b" data-r=".3,.425">
+        <p class="t-xl">lo imballiamo</p>
+        <p class="note"><b>Imballaggi.</b> Vuoi mantenere il tuo packaging? Mandacelo e lo utilizziamo secondo le tue indicazioni.</p>
+      </div>
+      <div class="beat b4 pos-a" data-r=".425,.52">
+        <p class="step big-step"><span>03</span> Prepariamo il pacco</p>
+        <p class="t-md">prelievo, imballo, etichetta</p>
+      </div>
+      <div class="beat b5 pos-c" data-r=".52,.665">
+        <p class="t-md">e lo affidiamo al corriere.</p>
+        <p class="t-hero">Decine di corrieri</p>
+        <p class="note">Integrati nella nostra piattaforma per gestire le spedizioni senza dipendere da un solo operatore.</p>
+        <p class="step"><span>04</span> Parte · con il corriere più adatto</p>
+      </div>
+      <div class="beat b6 pos-c" data-r=".67,.865">
+        <p class="t-hero">Europa</p>
+        <p class="note"><b>Pomezia.</b> Il tuo hub logistico in Italia, vicino a Roma.</p>
+        <p class="note">Magazzini anche in Ungheria e Spagna per accompagnare la crescita fuori dall'Italia.</p>
+      </div>
+      <div class="beat b7 pos-c" data-r=".875,1.01">
+        <p class="step big-step"><span>05</span> Il cliente lo riceve</p>
+        <p class="t-xl">con il suo tracking.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 6 · Chiusura: una frase, un bottone -->
+<section class="end" id="modulo">
+  <p class="word word-end">Tu continui a far crescere il tuo <span class="nw">e-commerce</span>.</p>
+  <a class="btn btn-lg" href="/elogy-bf26-concept/bf/crescita/#modulo" data-cta="fine">Prepara il tuo Black Friday</a>
+  <p class="small">Demo visiva del concept D · il modulo resta quello della landing attuale.</p>
+</section>
+
+</main>
+
+<div class="spot" hidden>
+  <div class="spot-in">
+    <button type="button" class="spot-x" aria-label="Chiudi">×</button>
+    <video controls playsinline preload="none" poster="/elogy-bf26-concept/bf/assets/kf-01-coldopen.webp"><source src="/elogy-bf26-concept/bf/assets/spot.mp4" type="video/mp4"></video>
+  </div>
+</div>
+
+<script src="d.js?v=1" defer></script>
+</body>
+</html>

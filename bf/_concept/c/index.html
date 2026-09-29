@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Concept C · Sala di controllo | eLogy Black Friday 2026</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#151716">
+<link rel="icon" href="/elogy-bf26-concept/bf/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/elogy-bf26-concept/bf/assets/kf-10-wide.webp">
+<link rel="stylesheet" href="c.css?v=1">
+<script>
+/* motion solo se JS c'è e l'utente non chiede movimento ridotto: senza, la pagina resta statica e completa */
+(function(d){try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!/[?&]statico/.test(location.search))d.classList.add('m')}catch(e){}d.classList.add('js')})(document.documentElement);
+</script>
+</head>
+<body>
+
+<!-- ============ BARRA DI STATO ============ -->
+<header class="hud">
+  <a class="hud-logo" href="https://elogy.io" aria-label="eLogy"><img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="107" height="39"></a>
+  <p class="hud-mid mono" aria-label="Conto alla rovescia al Black Friday">
+    <span class="led"></span><span>Black Friday · 27.11.2026</span>
+    <span class="sep">/</span><span data-countdown>T–</span>
+    <span class="sep hide-s">/</span><span class="hide-s" data-clock>--:--:--</span>
+  </p>
+  <a class="hud-cta" href="#modulo" data-cta="header">Prepara il tuo Black Friday</a>
+  <i class="hud-bar" aria-hidden="true"></i>
+</header>
+
+<main>
+
+<!-- ============ 1 · HERO + 2 · TRANSIZIONE: il video diventa un monitor della sala ============ -->
+<section class="s-hero" id="hero" data-pin>
+  <div class="stage">
+    <div class="feed" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/elogy-bf26-concept/bf/assets/kf-10-wide.webp">
+        <source src="/elogy-bf26-concept/bf/assets/loop-b.mp4" type="video/mp4">
+      </video>
+      <img class="hero-poster" src="/elogy-bf26-concept/bf/assets/kf-10-wide.webp" alt="" width="560" height="1003">
+      <span class="feed-tag mono"><i class="rec"></i>Spot di campagna</span>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="hero-in">
+      <p class="kicker"><span class="dot"></span>Black Friday 2026</p>
+      <h1>Il tuo e-commerce può vendere quanto vuole.<br>La logistica deve riuscire a seguirlo.</h1>
+      <p class="sub">Il Black Friday può portare più ordini in poche ore. Prepararli, imballarli e spedirli non deve diventare il limite della tua crescita.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#modulo" data-cta="hero">Prepara il tuo Black Friday</a>
+        <button class="btn-ghost" type="button" data-open-spot>Guarda cosa succede il 27 novembre <span aria-hidden="true">▶</span></button>
+      </div>
+      <ul class="hero-facts">
+        <li><b>5-7</b> giorni lavorativi per partire</li>
+        <li><b>Shopify</b> e <b>WooCommerce</b> collegati</li>
+        <li><b>Nessun</b> vincolo di durata rigido</li>
+      </ul>
+    </div>
+
+    <!-- la parete della sala: compare mentre il video si rimpicciolisce -->
+    <div class="wall" role="img" aria-label="Illustrazione: la sala di controllo eLogy con ordini in arrivo, stato del pacco, rete europea e ubicazioni. Dati d'esempio.">
+      <div class="wall-grid" aria-hidden="true"></div>
+      <div class="tile t-feed" data-t="0"><span class="tl mono">Spot di campagna</span><img src="/elogy-bf26-concept/bf/assets/kf-10-wide.webp" alt="" loading="lazy" width="560" height="1003"></div>
+
+      <div class="tile t-orders" data-t="1">
+        <p class="tl mono">Ordini in arrivo <em class="demo">dati d'esempio</em></p>
+        <ul class="ticker mono" data-ticker>
+          <li><i></i><u>Nuovo ordine</u><span>Shopify</span><b>ricevuto</b></li>
+          <li><i></i><u>Nuovo ordine</u><span>WooCommerce</span><b>ricevuto</b></li>
+          <li><i></i><u>Nuovo ordine</u><span>API</span><b class="g">preso in carico</b></li>
+          <li><i></i><u>Nuovo ordine</u><span>Shopify</span><b class="g">preso in carico</b></li>
+          <li><i></i><u>Nuovo ordine</u><span>Shopify</span><b class="g">preparato</b></li>
+          <li><i></i><u>Nuovo ordine</u><span>WooCommerce</span><b class="g">affidato al corriere</b></li>
+        </ul>
+      </div>
+
+      <div class="tile t-track" data-t="2">
+        <p class="tl mono">Stato del pacco <em class="demo">esempio</em></p>
+        <p class="mt-now mono" data-mt-now>Preparato</p>
+        <ol class="mini-track mono" data-minitrack>
+          <li class="done">Ricevuto</li><li class="done">Preso in carico</li><li class="now">Preparato</li><li>Affidato al corriere</li><li>Consegnato</li>
+        </ol>
+      </div>
+
+      <div class="tile t-net" data-t="3">
+        <p class="tl mono">Rete · Europa</p>
+        <div class="mini-map">
+          <img src="europa.svg" alt="" loading="lazy" width="1004" height="851">
+          <span class="mh" style="left:51.1%;top:73.4%"><i></i>Pomezia</span>
+          <span class="mh" style="left:63.5%;top:56.9%"><i></i>Pécs</span>
+          <span class="mh l" style="left:29.2%;top:73.9%"><i></i>Mataró</span>
+        </div>
+      </div>
+
+      <div class="tile t-bins" data-t="4">
+        <p class="tl mono">Ubicazioni <em class="demo">esempio</em></p>
+        <div class="bins" data-bins aria-hidden="true"></div>
+      </div>
+
+      <div class="tile t-clock" data-t="5">
+        <p class="tl mono">Black Friday</p>
+        <p class="big mono" data-countdown-big>T–</p>
+        <p class="tl mono dim">27 novembre 2026</p>
+        <p class="tl mono clock-l">Ora locale <span data-clock2>--:--:--</span></p>
+      </div>
+      <p class="wall-cap mono" aria-hidden="true"><span class="led"></span>Sala di controllo <span class="nc">eLogy</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · PROBLEMA: il registro su carta ============ -->
+<section class="s-prob" id="problema">
+  <div class="prob-wrap">
+    <header class="prob-head">
+      <p class="eyebrow">Il problema</p>
+      <h2>Quando le vendite accelerano, la logistica non può frenarti.</h2>
+    </header>
+
+    <figure class="chart" data-step="4" aria-label="Schema illustrativo: le vendite salgono di colpo, la capacità di spedire cresce a piccoli passi, e in mezzo restano ordini venduti ma non ancora spediti.">
+      <div class="chart-bar mono">
+        <span>Registro · ordini / capacità</span>
+        <span class="chip">Collo di bottiglia</span>
+      </div>
+      <svg viewBox="0 0 640 380" aria-hidden="true">
+        <defs>
+          <pattern id="mm" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#151716" stroke-opacity=".06" stroke-width="1"/></pattern>
+          <pattern id="cm" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#151716" stroke-opacity=".1" stroke-width="1"/></pattern>
+          <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V7" stroke="#D98E1F" stroke-width="2.2"/></pattern>
+        </defs>
+        <rect x="40" y="20" width="590" height="320" fill="url(#mm)"/>
+        <rect x="40" y="20" width="590" height="320" fill="url(#cm)"/>
+        <path class="axis" d="M40 20V340H630"/>
+        <text class="ax" x="628" y="360" text-anchor="end">tempo →</text>
+        <text class="ax" x="30" y="24" text-anchor="end" transform="rotate(-90 30 24)">ordini →</text>
+
+        <path class="gap" d="M252 292C262 200 272 140 290 118L340 100L380 112L420 92L470 98L520 84L570 90L620 78V244H570V256H480V268H390V280H300V292Z" fill="url(#hatch)"/>
+        <g class="cap">
+          <path class="ln cap-l" pathLength="1" d="M50 292H300V280H390V268H480V256H570V244H620"/>
+          <text class="lbl" x="300" y="304">persone</text>
+          <text class="lbl" x="390" y="292">postazioni</text>
+          <text class="lbl" x="480" y="280">spazio</text>
+          <text class="lbl" x="570" y="268">ritiri</text>
+          <text class="lbl strong" x="622" y="236" text-anchor="end">capacità di spedire</text>
+        </g>
+        <g class="dem">
+          <path class="ln dem-l" pathLength="1" d="M50 306L150 304L230 300C245 298 250 292 252 292C262 200 272 140 290 118L340 100L380 112L420 92L470 98L520 84L570 90L620 78"/>
+          <path class="mark" d="M252 340V36" />
+          <text class="lbl" x="258" y="48">budget campagne ↑</text>
+          <text class="lbl strong" x="622" y="66" text-anchor="end">vendite</text>
+          <circle class="pen" cx="620" cy="78" r="4.5"/>
+        </g>
+        <g class="gap-l">
+          <rect x="386" y="164" width="196" height="26" fill="#F3F3EF"/>
+          <text class="lbl warn" x="394" y="182">venduti, non ancora spediti</text>
+        </g>
+      </svg>
+      <figcaption class="mono">Schema illustrativo · nessun dato reale</figcaption>
+    </figure>
+
+    <div class="prob-steps">
+      <p class="ps" data-s="1">Puoi aumentare il budget delle campagne in pochi minuti.</p>
+      <p class="ps" data-s="2">Non puoi aggiungere persone, postazioni, spazio e ritiri dei corrieri con la stessa velocità.</p>
+      <p class="ps" data-s="3">E quando gli ordini aumentano tutti insieme, il problema non è più venderne un altro.</p>
+      <p class="ps strong" data-s="4">È riuscire a spedire quelli che hai già venduto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 · CON ELOGY: il clic che passa il controllo ============ -->
+<section class="s-shift" id="con-elogy">
+  <div class="wrap">
+    <p class="eyebrow">Con eLogy</p>
+    <h2 class="shift-h">Tu pensa a vendere.<br>Dal clic in poi, ci pensa eLogy.</h2>
+  </div>
+
+  <div class="circuit" aria-hidden="true">
+    <svg class="cx-d" viewBox="0 0 1200 300">
+      <g class="zone-l"><rect x="20" y="16" width="318" height="240" class="zbg"/><text class="zl" x="36" y="40">Tu · il tuo store</text></g>
+      <g class="zone-r"><rect x="368" y="16" width="812" height="240" class="zbg r"/><text class="zl g nc" x="384" y="40">eLogy</text></g>
+      <g class="ports">
+        <text x="196" y="95" text-anchor="end">Shopify</text><circle cx="212" cy="90" r="5"/>
+        <text x="196" y="145" text-anchor="end">WooCommerce</text><circle cx="212" cy="140" r="5"/>
+        <text x="196" y="195" text-anchor="end">API</text><circle cx="212" cy="190" r="5"/>
+      </g>
+      <path class="w w1" pathLength="1" d="M217 90C270 90 280 140 330 140"/>
+      <path class="w w1" pathLength="1" d="M217 140H330"/>
+      <path class="w w1" pathLength="1" d="M217 190C270 190 280 140 330 140"/>
+      <g class="click"><path d="M353 24V256" class="clk-l"/><rect x="345" y="132" width="16" height="16" transform="rotate(45 353 140)" class="clk-d"/><text x="353" y="10" text-anchor="middle">il clic</text></g>
+      <path class="w w2 main" id="cx-main" pathLength="1" d="M330 140H1150"/>
+      <g class="cube" transform="translate(438 116) scale(1.45)"><path d="M2.6 10.9L16.2 18.7L16.6 35.2L2.6 26.8Z" fill="#2EA853"/><path d="M30.4 10.7L16.4 19.1L16.7 34.5L30.4 26.5Z" fill="#2F8446"/><path d="M16.8 3L16.7 19.1L30.4 10.7Z" fill="#2EA853"/><path d="M16.8 18.9V2.9L3.1 10.7Z" fill="#2F8446"/></g>
+      <g class="ops">
+        <g class="op" style="--d:0"><rect x="606" y="126" width="28" height="28"/><text x="620" y="104" text-anchor="middle">prelievo</text></g>
+        <g class="op" style="--d:1"><rect x="746" y="126" width="28" height="28"/><text x="760" y="104" text-anchor="middle">preparazione</text></g>
+        <g class="op" style="--d:2"><rect x="886" y="126" width="28" height="28"/><text x="900" y="104" text-anchor="middle">imballo</text></g>
+        <g class="op" style="--d:3"><rect x="1026" y="126" width="28" height="28"/><text x="1040" y="104" text-anchor="middle">corriere</text></g>
+      </g>
+      <path class="arrow" d="M1150 132L1164 140L1150 148"/>
+      <path class="w w3 ret" pathLength="1" d="M1164 140V286H112V206"/>
+      <text class="rl" x="640" y="280" text-anchor="middle">stato e tracking</text>
+    </svg>
+    <svg class="cx-m" viewBox="0 0 360 560">
+      <text class="zl" x="16" y="22">Tu · il tuo store</text>
+      <g class="ports">
+        <text x="64" y="58" text-anchor="middle">Shopify</text><circle cx="64" cy="72" r="5"/>
+        <text x="170" y="58" text-anchor="middle">WooCommerce</text><circle cx="170" cy="72" r="5"/>
+        <text x="276" y="58" text-anchor="middle">API</text><circle cx="276" cy="72" r="5"/>
+      </g>
+      <path class="w w1" pathLength="1" d="M64 77C64 110 170 100 170 130"/>
+      <path class="w w1" pathLength="1" d="M170 77V130"/>
+      <path class="w w1" pathLength="1" d="M276 77C276 110 170 100 170 130"/>
+      <g class="click"><path d="M16 146H330" class="clk-l"/><rect x="162" y="138" width="16" height="16" transform="rotate(45 170 146)" class="clk-d"/><text x="330" y="138" text-anchor="end">il clic</text></g>
+      <text class="zl g nc" x="16" y="178">eLogy</text>
+      <path class="w w2 main" id="cx-main-m" pathLength="1" d="M170 130V500"/>
+      <g class="cube" transform="translate(146 186) scale(1.45)"><path d="M2.6 10.9L16.2 18.7L16.6 35.2L2.6 26.8Z" fill="#2EA853"/><path d="M30.4 10.7L16.4 19.1L16.7 34.5L30.4 26.5Z" fill="#2F8446"/><path d="M16.8 3L16.7 19.1L30.4 10.7Z" fill="#2EA853"/><path d="M16.8 18.9V2.9L3.1 10.7Z" fill="#2F8446"/></g>
+      <g class="ops">
+        <g class="op" style="--d:0"><rect x="158" y="268" width="24" height="24"/><text x="194" y="285">prelievo</text></g>
+        <g class="op" style="--d:1"><rect x="158" y="326" width="24" height="24"/><text x="194" y="343">preparazione</text></g>
+        <g class="op" style="--d:2"><rect x="158" y="384" width="24" height="24"/><text x="194" y="401">imballo</text></g>
+        <g class="op" style="--d:3"><rect x="158" y="442" width="24" height="24"/><text x="194" y="459">corriere</text></g>
+      </g>
+      <path class="arrow" d="M162 500L170 514L178 500"/>
+      <path class="w w3 ret" pathLength="1" d="M170 514V540H16V60H40"/>
+      <text class="rl" x="24" y="300" transform="rotate(-90 24 300)" text-anchor="middle">stato e tracking</text>
+    </svg>
+  </div>
+
+  <div class="wrap shift-cols">
+    <p class="sc sc1">L'ordine arriva direttamente dal tuo Shopify, WooCommerce o tramite API.</p>
+    <p class="sc sc2">Noi lo preleviamo, lo prepariamo, lo imballiamo e lo affidiamo al corriere.</p>
+    <p class="sc sc3">Tu continui a far crescere il tuo e-commerce.</p>
+  </div>
+</section>
+
+<!-- ============ 5 · PROCESSO: il flusso della sala di controllo ============ -->
+<section class="s-flow" id="flusso" data-pin>
+  <div class="flow-stage">
+    <div class="flow-top mono">
+      <span class="ft-t"><span class="led"></span>Il percorso di un ordine</span>
+      <span class="demo">Dati d'esempio · flusso illustrativo</span>
+    </div>
+    <ol class="lanes" aria-label="Il percorso di un ordine">
+      <li class="lane" data-i="0">
+        <div class="lane-h"><span class="lst mono">Ordini in arrivo</span><span class="n mono">01</span><b>Vendi</b><small>Shopify, WooCommerce o API</small></div>
+        <div class="lane-f"><svg class="gly" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6"/></svg></div>
+      </li>
+      <li class="lane" data-i="1">
+        <div class="lane-h"><span class="lst mono">Presi in carico</span><span class="n mono">02</span><b>L'ordine arriva a eLogy</b><small>automaticamente</small></div>
+        <div class="lane-f"><svg class="gly" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" fill="currentColor" opacity=".35"/><rect x="5" y="3" width="3" height="18" fill="#2EA853"/></svg></div>
+      </li>
+      <li class="lane" data-i="2">
+        <div class="lane-h"><span class="lst mono">Preparati</span><span class="n mono">03</span><b>Prepariamo il pacco</b><small>prelievo, imballo, etichetta</small></div>
+        <div class="lane-f"><svg class="gly" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5Z" fill="#2F8446"/><path d="M12 3L20 7.5L12 12L4 7.5Z" fill="#2EA853"/><path d="M12 12V21L4 16.5V7.5Z" fill="#2EA853" opacity=".7"/></svg></div>
+      </li>
+      <li class="lane" data-i="3">
+        <div class="lane-h"><span class="lst mono">Affidati ai corrieri</span><span class="n mono">04</span><b>Parte</b><small>con il corriere più adatto</small></div>
+        <div class="lane-f"><svg class="gly" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 9h5M0 13h6M2 17h4" stroke="#9BE15D" stroke-width="1.6"/><path d="M15 3L23 7.5V16.5L15 21L7 16.5V7.5Z" fill="#2F8446"/><path d="M15 3L23 7.5L15 12L7 7.5Z" fill="#2EA853"/></svg></div>
+      </li>
+      <li class="lane" data-i="4">
+        <div class="lane-h"><span class="lst mono">Consegnati</span><span class="n mono">05</span><b>Il cliente lo riceve</b><small>con il suo tracking</small></div>
+        <div class="lane-f"><svg class="gly" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#2EA853" stroke-width="1.6"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#2EA853" stroke-width="1.8"/></svg></div>
+      </li>
+    </ol>
+    <canvas class="flow-cv" aria-hidden="true"></canvas>
+    <div class="trk mono" aria-hidden="true">
+      <span class="trk-t">Stato del pacco · esempio</span>
+      <ol class="trk-s">
+        <li>Ricevuto</li><li>Preso in carico</li><li>Preparato</li><li>Affidato al corriere</li><li>Consegnato</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5b · LA RETE: mappa viva ============ -->
+<section class="s-map" id="rete">
+  <div class="map-stage" data-step="3">
+    <div class="map-cam">
+      <div class="map">
+        <img class="map-dots" src="europa.svg" alt="" width="1004" height="851" loading="lazy">
+        <svg class="map-ov" viewBox="0 0 1004 851" role="img" aria-label="Mappa stilizzata dell'Europa con i magazzini eLogy di Pomezia (Italia), Pécs (Ungheria) e Mataró (Spagna). Le linee sono illustrative.">
+          <g class="routes">
+<path class="rt" style="--i:0" d="M513 625Q455 545 441 504"/><path class="rt" style="--i:1" d="M513 625Q557 616 608 643"/><path class="rt" style="--i:2" d="M513 625Q502 673 532 739"/><path class="rt" style="--i:3" d="M513 625Q466 508 493 418"/><path class="rt" style="--i:4" d="M513 625Q575 538 589 492"/><path class="rt" style="--i:5" d="M638 484Q605 439 597 416"/><path class="rt" style="--i:6" d="M638 484Q655 455 656 438"/><path class="rt" style="--i:7" d="M638 484Q573 399 555 356"/><path class="rt" style="--i:8" d="M638 484Q703 365 698 287"/><path class="rt" style="--i:9" d="M638 484Q680 407 675 356"/><path class="rt" style="--i:10" d="M638 484Q714 477 810 537"/><path class="rt" style="--i:11" d="M638 484Q674 513 749 592"/><path class="rt" style="--i:12" d="M638 484Q651 579 758 743"/><path class="rt" style="--i:13" d="M638 484Q548 352 533 278"/><path class="rt" style="--i:14" d="M293 629Q232 621 159 665"/><path class="rt" style="--i:15" d="M293 629Q183 624 41 719"/><path class="rt" style="--i:16" d="M293 629Q225 656 110 762"/><path class="rt" style="--i:17" d="M293 629Q241 559 227 524"/><path class="rt" style="--i:18" d="M293 629Q344 545 346 494"/><path class="rt" style="--i:19" d="M293 629Q250 500 291 395"/><path class="rt" style="--i:20" d="M293 629Q368 458 335 331"/><path class="rt" style="--i:21" d="M293 629Q382 429 347 283"/><path class="rt" style="--i:22" d="M293 629Q410 454 429 355"/>
+          </g>
+          <g class="dests">
+<circle cx="441" cy="504" r="3.5"/><circle cx="608" cy="643" r="3.5"/><circle cx="532" cy="739" r="3.5"/><circle cx="493" cy="418" r="3.5"/><circle cx="589" cy="492" r="3.5"/><circle cx="597" cy="416" r="3.5"/><circle cx="656" cy="438" r="3.5"/><circle cx="555" cy="356" r="3.5"/><circle cx="698" cy="287" r="3.5"/><circle cx="675" cy="356" r="3.5"/><circle cx="810" cy="537" r="3.5"/><circle cx="749" cy="592" r="3.5"/><circle cx="758" cy="743" r="3.5"/><circle cx="533" cy="278" r="3.5"/><circle cx="159" cy="665" r="3.5"/><circle cx="41" cy="719" r="3.5"/><circle cx="110" cy="762" r="3.5"/><circle cx="227" cy="524" r="3.5"/><circle cx="346" cy="494" r="3.5"/><circle cx="291" cy="395" r="3.5"/><circle cx="335" cy="331" r="3.5"/><circle cx="347" cy="283" r="3.5"/><circle cx="429" cy="355" r="3.5"/>
+          </g>
+          <g class="links">
+            <path class="lk" pathLength="1" d="M513 625Q611 516 638 484"/>
+            <path class="lk" pathLength="1" d="M513 625Q404 572 293 629"/>
+            <path class="lk faint" pathLength="1" d="M293 629Q506 453 638 484"/>
+          </g>
+          <g class="hub h-pom" transform="translate(513 625)"><g class="hz"><circle class="ring" r="22"/><circle class="core" r="6"/><path class="tick" d="M-34 0H-26M26 0H34M0 -34V-26M0 26V34"/><text x="16" y="44">POMEZIA · IT</text><text class="co" x="16" y="60">41.67°N 12.50°E</text></g></g>
+          <g class="hub h-pec" transform="translate(638 484)"><g class="hz"><circle class="ring" r="22"/><circle class="core" r="6"/><path class="tick" d="M-34 0H-26M26 0H34M0 -34V-26M0 26V34"/><text x="16" y="-40">PÉCS · HU</text><text class="co" x="16" y="-24">46.07°N 18.23°E</text></g></g>
+          <g class="hub h-mat" transform="translate(293 629)"><g class="hz"><circle class="ring" r="22"/><circle class="core" r="6"/><path class="tick" d="M-34 0H-26M26 0H34M0 -34V-26M0 26V34"/><text x="-16" y="44" text-anchor="end">MATARÓ · ES</text><text class="co" x="-16" y="60" text-anchor="end">41.54°N 2.44°E</text></g></g>
+        </svg>
+      </div>
+    </div>
+    <div class="map-top mono"><span><span class="led"></span>Rete <span class="nc">eLogy</span> · Europa</span><span class="demo">Linee illustrative · non sono rotte né tempi reali</span></div>
+  </div>
+
+  <div class="map-panels">
+    <header class="mp mp-0" data-s="0">
+      <p class="eyebrow">Perché eLogy</p>
+      <h2>La logistica che c'è dietro ai tuoi ordini.</h2>
+    </header>
+    <article class="mp" data-s="1"><p class="mp-k mono"><i></i>Pomezia</p><p>Il tuo hub logistico in Italia, vicino a Roma.</p></article>
+    <article class="mp" data-s="2"><p class="mp-k mono"><i></i>Europa</p><p>Magazzini anche in Ungheria e Spagna per accompagnare la crescita fuori dall'Italia.</p></article>
+    <article class="mp" data-s="3"><p class="mp-k mono"><i></i>Decine di corrieri</p><p>Integrati nella nostra piattaforma per gestire le spedizioni senza dipendere da un solo operatore.</p></article>
+  </div>
+</section>
+
+<!-- ============ extra · COME SI PARTE: sequenza di avvio ============ -->
+<section class="s-boot" id="avvio">
+  <div class="wrap boot-grid">
+    <div>
+      <p class="eyebrow">Come si parte</p>
+      <h2>Dal tuo magazzino a eLogy, senza fermare le vendite.</h2>
+      <dl class="mods">
+        <div><dt class="mono">Il tuo store</dt><dd>Shopify e WooCommerce collegati direttamente. API per le altre piattaforme.</dd></div>
+        <div><dt class="mono">Imballaggi</dt><dd>Vuoi mantenere il tuo packaging? Mandacelo e lo utilizziamo secondo le tue indicazioni.</dd></div>
+        <div><dt class="mono">Resi e giacenze</dt><dd>Gestiamo i resi e puoi seguire le giacenze dalla piattaforma eLogy.</dd></div>
+      </dl>
+    </div>
+    <ol class="boot">
+      <li><span class="bs mono"><i></i><em>01</em></span><h3>Partiamo dai tuoi numeri</h3><p>Ordini, prodotti e logistica attuale. Capiamo cosa serve per arrivare pronti al picco.</p></li>
+      <li><span class="bs mono"><i></i><em>02</em></span><h3>Colleghiamo il tuo store</h3><p>Shopify e WooCommerce si collegano direttamente. Per le altre piattaforme possiamo lavorare tramite API.</p></li>
+      <li><span class="bs mono"><i></i><em>03</em></span><h3>La merce arriva da eLogy</h3><p>La controlliamo all'arrivo. Se troviamo un problema ti avvisiamo con le foto prima di metterla a stock.</p></li>
+      <li><span class="bs mono"><i></i><em>04</em></span><h3>Iniziamo a spedire</h3><p>La merce è pronta in 24–48 ore lavorative dal suo arrivo. Da quel momento gli ordini possono partire dal nostro magazzino.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="s-final" id="modulo">
+  <div class="wrap">
+    <p class="final-k mono"><span class="led"></span>27.11.2026 · <span data-countdown>T–</span></p>
+    <h2>Il 27 novembre devi pensare a vendere.<br>Non a quanti pacchi riesci ancora a preparare.</h2>
+    <p class="lead">Raccontaci quanti ordini gestisci e come spedisci oggi. Vediamo insieme se eLogy può preparare la tua logistica per il Black Friday.</p>
+    <a class="btn" href="#modulo" data-cta="final">Prepara il tuo Black Friday</a>
+    <p class="small">Preferisci telefonare? <a href="tel:+393933302394" data-cta="phone">+39 393 3302394</a></p>
+    <p class="demo-note mono">Demo visiva del concept C · qui nella pagina vera c'è il modulo, invariato</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="90" height="33" loading="lazy">
+    <p>Elogy Srl · Fulfillment e logistica per e-commerce · <a href="https://elogy.io">elogy.io</a></p>
+  </div>
+</footer>
+
+<a class="sticky-cta" href="#modulo" data-cta="sticky">Prepara il tuo Black Friday</a>
+
+<div class="spot" hidden>
+  <div class="spot-in">
+    <button type="button" class="spot-x" data-close-spot aria-label="Chiudi">×</button>
+    <video controls playsinline preload="none" src="/elogy-bf26-concept/bf/assets/spot.mp4" poster="/elogy-bf26-concept/bf/assets/kf-01-coldopen.webp"></video>
+  </div>
+</div>
+
+<script src="c.js?v=1" defer></script>
+</body>
+</html>

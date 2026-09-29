@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Concept A · Dal caos al controllo | eLogy</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#151716">
+<link rel="icon" href="/elogy-bf26-concept/bf/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/elogy-bf26-concept/bf/assets/kf-10-wide.webp">
+<link rel="stylesheet" href="a.css?v=2">
+<script>
+  /* motion attiva solo con JS e senza «riduci movimento»: altrimenti resta la pagina statica completa */
+  (function(d){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+   if(!rm&&!/[?&]static\b/.test(location.search)){d.className='js'}else{d.className='no-js rm'}})(document.documentElement);
+</script>
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="https://elogy.io" aria-label="eLogy"><img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="107" height="39"></a>
+  <a class="top-cta" href="#parti" data-cta="header">Prepara il tuo Black Friday</a>
+</header>
+
+<!-- ============ LIVELLO NOTIFICHE (globale, guidato dallo scroll) ============ -->
+<div class="toasts" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main>
+
+<!-- ============ SCENA 1 · HERO → LO SPOT SI APRE ============ -->
+<section class="scene s-intro" id="intro" data-scene="intro">
+  <div class="frame">
+    <video class="v v-hero" autoplay muted loop playsinline preload="metadata" poster="/elogy-bf26-concept/bf/assets/kf-10-wide.webp" aria-hidden="true">
+      <source src="/elogy-bf26-concept/bf/assets/loop-b.mp4" type="video/mp4">
+    </video>
+    <video class="v v-calm" muted loop playsinline preload="none" poster="/elogy-bf26-concept/bf/assets/kf-02-normale.webp" data-src="/elogy-bf26-concept/bf/assets/loop-c.mp4" aria-hidden="true"></video>
+    <div class="hero-shade"></div>
+    <div class="letterbox" aria-hidden="true"><i></i><i></i></div>
+    <p class="slate" aria-hidden="true"><span>Black Friday 2026</span><b>27 novembre</b></p>
+
+    <div class="hero-in">
+      <p class="kicker"><span class="dot"></span>Black Friday 2026</p>
+      <h1>Il tuo e-commerce può vendere quanto vuole.<br>La logistica deve riuscire a seguirlo.</h1>
+      <p class="sub">Il Black Friday può portare più ordini in poche ore. Prepararli, imballarli e spedirli non deve diventare il limite della tua crescita.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#parti" data-cta="hero">Prepara il tuo Black Friday</a>
+        <button class="btn-ghost" type="button" data-open-spot>Guarda cosa succede il 27 novembre <span aria-hidden="true">▶</span></button>
+      </div>
+      <ul class="hero-facts">
+        <li><b>5-7</b> giorni lavorativi per partire</li>
+        <li><b>Shopify</b> e <b>WooCommerce</b> collegati</li>
+        <li><b>Nessun</b> vincolo di durata rigido</li>
+      </ul>
+    </div>
+    <div class="scrollcue" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ============ SCENA 2 · IL PROBLEMA: LA PRESSIONE SALE ============ -->
+<section class="scene s-problem" id="problema" data-scene="problem">
+  <div class="frame">
+    <video class="v v-storm" muted loop playsinline preload="none" poster="/elogy-bf26-concept/bf/assets/kf-04-pacchi.webp" data-src="/elogy-bf26-concept/bf/assets/loop-a.mp4" aria-hidden="true"></video>
+    <picture class="handoff" aria-hidden="true">
+      <source media="(max-width:760px)" srcset="media/seq-m/00.webp">
+      <img src="media/seq-d/00.webp" alt="" loading="lazy">
+    </picture>
+    <div class="storm-shade"></div>
+    <div class="pulse" aria-hidden="true"></div>
+
+    <div class="p-head">
+      <p class="eyebrow">Il problema</p>
+      <h2>Quando le vendite accelerano, la logistica non può frenarti.</h2>
+    </div>
+    <div class="p-lines">
+      <p class="kl">Puoi aumentare il budget delle campagne in pochi minuti.</p>
+      <p class="kl">Non puoi aggiungere <em>persone, postazioni, spazio e ritiri dei corrieri</em> con la stessa velocità.</p>
+      <p class="kl">E quando gli ordini aumentano tutti insieme, il problema non è più venderne un altro.</p>
+      <p class="kl kl-last">È riuscire a <em>spedire</em> quelli che hai già venduto.</p>
+    </div>
+
+    <!-- solo nella versione statica: tre notifiche ferme per dare l'idea -->
+    <ul class="static-toasts" aria-hidden="true">
+      <li class="toast"><span class="ic"></span><span class="tx"><b>Nuovo ordine</b><i></i><i></i></span><span class="tm">ora</span></li>
+      <li class="toast"><span class="ic"></span><span class="tx"><b>Nuovo ordine</b><i></i><i></i></span><span class="tm">ora</span></li>
+      <li class="toast"><span class="ic"></span><span class="tx"><b>Nuovo ordine</b><i></i><i></i></span><span class="tm">ora</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SCENA 3 · ENTRA ELOGY: IL CAOS SI ORDINA ============ -->
+<section class="scene s-control" id="con-elogy" data-scene="control">
+  <div class="frame">
+    <picture class="still">
+      <source media="(max-width:760px)" srcset="media/ordine-m.webp">
+      <img src="media/ordine-d.webp" alt="" width="1280" height="720" loading="lazy">
+    </picture>
+    <canvas class="seq" aria-hidden="true"></canvas>
+    <div class="control-shade"></div>
+    <div class="enter" aria-hidden="true">
+      <span class="ring"></span><span class="ring r2"></span>
+      <img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="" width="107" height="39">
+    </div>
+    <div class="sweep" aria-hidden="true"></div>
+
+    <div class="c-copy">
+      <p class="eyebrow">Con eLogy</p>
+      <h2>Tu pensa a vendere.<br>Dal clic in poi, ci pensa eLogy.</h2>
+    </div>
+    <div class="c-par">
+      <p>L'ordine arriva direttamente dal tuo Shopify, WooCommerce o tramite API.</p>
+      <p>Noi lo preleviamo, lo prepariamo, lo imballiamo e lo affidiamo al corriere.</p>
+      <p>Tu continui a far crescere il tuo e-commerce.</p>
+    </div>
+    <p class="tag-illu" aria-hidden="true">Immagine di campagna</p>
+    <div class="blackout" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ SCENA 4 · IL VIAGGIO DI UN ORDINE ============ -->
+<section class="scene s-process" id="processo" data-scene="process" aria-label="Il percorso di un ordine">
+  <div class="frame">
+    <div class="lanes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="track">
+      <div class="rail" aria-hidden="true"><span class="rail-fill"></span></div>
+      <ol class="stations">
+        <li class="st" data-i="0"><span class="n">01</span><b>Vendi</b><small>Shopify, WooCommerce o API</small>
+          <div class="st-art" aria-hidden="true"><div class="ord"><span class="ic"></span><span class="tx"><b>Nuovo ordine</b><i></i><i></i></span></div><span class="click"></span></div></li>
+        <li class="st" data-i="1"><span class="n">02</span><b>L'ordine arriva a eLogy</b><small>automaticamente</small>
+          <div class="st-art" aria-hidden="true"><img class="cube" src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="" width="107" height="39"></div></li>
+        <li class="st" data-i="2"><span class="n">03</span><b>Prepariamo il pacco</b><small>prelievo, imballo, etichetta</small>
+          <div class="st-art" aria-hidden="true"><div class="box3d"><i class="f"></i><i class="t"></i><i class="s"></i><i class="lbl"></i></div></div></li>
+        <li class="st" data-i="3"><span class="n">04</span><b>Parte</b><small>con il corriere più adatto</small>
+          <div class="st-art" aria-hidden="true"><svg class="fan" viewBox="0 0 260 120" preserveAspectRatio="xMinYMid meet"><path d="M40 60 C120 60 150 4 260 0"/><path d="M40 60 C120 60 150 30 260 26"/><path d="M40 60 C120 60 150 46 260 44"/><path class="on" d="M40 60 L260 60"/><path d="M40 60 C120 60 150 76 260 78"/><path d="M40 60 C120 60 150 92 260 96"/><path d="M40 60 C120 60 150 116 260 120"/></svg></div></li>
+        <li class="st" data-i="4"><span class="n">05</span><b>Il cliente lo riceve</b><small>con il suo tracking</small>
+          <div class="st-art" aria-hidden="true"><svg class="door" viewBox="0 0 120 120"><circle cx="60" cy="60" r="44"/><path d="M40 61 l14 14 l28 -30"/></svg></div></li>
+      </ol>
+    </div>
+    <!-- il pacco che viaggia (solo con movimento) -->
+    <div class="token" aria-hidden="true">
+      <div class="tk tk-ord"><span class="ic"></span><span class="tx"><b>Nuovo ordine</b><i></i><i></i></span></div>
+      <div class="tk tk-box"><div class="box3d"><i class="f"></i><i class="t"></i><i class="s"></i><i class="lbl"></i></div></div>
+      <span class="speed"></span>
+    </div>
+    <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ============ CHIUSURA DEMO ============ -->
+<section class="end" id="parti">
+  <div class="end-in">
+    <img src="/elogy-bf26-concept/bf/assets/elogy-logo-su-fondo-scuro.svg" alt="eLogy" width="107" height="39">
+    <a class="btn big" href="#parti" data-cta="demo-end">Prepara il tuo Black Friday</a>
+    <p class="end-fact"><b>5-7</b> giorni lavorativi per partire · <b>Shopify</b> e <b>WooCommerce</b> collegati · <b>Nessun</b> vincolo di durata rigido</p>
+    <p class="end-note">Demo visiva · Concept A · qui nella landing vera seguono «Come si parte», «Perché eLogy», domande e modulo, invariati.</p>
+  </div>
+</section>
+
+</main>
+
+<div class="spot" hidden>
+  <div class="spot-in">
+    <button type="button" class="spot-x" data-close-spot aria-label="Chiudi">×</button>
+    <video controls playsinline preload="none" src="/elogy-bf26-concept/bf/assets/spot.mp4" poster="/elogy-bf26-concept/bf/assets/kf-01-coldopen.webp"></video>
+  </div>
+</div>
+
+<script src="a.js?v=2" defer></script>
+</body>
+</html>
